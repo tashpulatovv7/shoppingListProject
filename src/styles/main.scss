@@ -1,0 +1,16 @@
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/globals";
+
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/layout";
+
+@import "./components/input";
+@import "./components/auth";
+
+@import "./pages/auth-page";
+@import "./pages/groupPage";
+@import "./pages/home";
+
+

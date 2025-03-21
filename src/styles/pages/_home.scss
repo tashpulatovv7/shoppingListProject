@@ -1,0 +1,120 @@
+.home {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: #FFF;
+    border-top: 2px dashed $border-color;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+
+        .profile__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            h3 {
+                font-size: 24px;
+            }
+
+            .content__btn {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .username__copy,
+                .username__delete {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 8px 16px;
+                    color: #FFF;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-out;
+                }
+
+                .username__copy {
+                    background-color: #0075fb;
+                    border: 1px solid #0075fb;
+
+                    &:hover {
+                        background-color: #0065d9;
+                    }
+                }
+
+                .username__delete {
+                    background-color: #ff3636;
+                    border: 1px solid #ff3636;
+
+                    &:hover {
+                        background-color: #e60000;
+                    }
+                }
+            }
+        }
+
+        .profile__info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .avatar {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                border: 2px solid #FFF;
+            }
+
+            .info__text {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                text-transform: capitalize;
+
+                .user__active {
+                    display: flex;
+                    align-items: start;
+                    gap: 10px;
+
+                    p {
+                       font-size: 28px;
+                       font-weight: 600;
+                       line-height: 40px;
+                    }
+                    span {
+                        padding: 3px 8px;
+                        border-radius: 5px;
+                        background-color: #2ccd82;
+                        color: #FFF;
+                    }
+                }
+                h4 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+body.dark {
+    .home {
+        background-color: #1B232D;
+        border-top: 2px dashed #222d39;
+    }
+
+    .home__user {
+        background-color: #222d39;
+    }
+}
